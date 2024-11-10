@@ -82,14 +82,14 @@ GImage = ScaledImage .^ Gamma;
 % 
 % 'spillway-dark.tif':
 % These parametere was good for this image:
-% Gamma = 0.4;
-% Lower = 0.1;
+% Gamma = 0.5;
+% Lower = 0.2;
 % Upper = 0.9;
 %
 % 'aerialview-washedout.tif'
 % These parametere was good for this image:
-% Gamma = 0.7;
-% Lower = 0.2;
+% Gamma = 2.4;
+% Lower = 0.01;
 % Upper = 0.9;
 %
 %
