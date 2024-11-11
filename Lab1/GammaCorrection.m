@@ -82,15 +82,15 @@ GImage = ScaledImage .^ Gamma;
 % 
 % 'spillway-dark.tif':
 % These parametere was good for this image:
-% Gamma = 0.5;
-% Lower = 0.2;
+% Gamma = 0.4;
+% Lower = 0.1;
 % Upper = 0.9;
 %
 % 'aerialview-washedout.tif'
 % These parametere was good for this image:
-% Gamma = 2.4;
-% Lower = 0.01;
-% Upper = 0.9;
+% Gamma = ;
+% Lower = ;
+% Upper =;
 %
 %
 % The image 'IntensityRampGamma25.tif' illustrates the effect of an intensity
