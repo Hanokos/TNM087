@@ -32,10 +32,8 @@ function GImage = GammaCorrection( OImage, Gamma, Lower, Upper )
 %% Image class handling
 % Make sure that you can handle input images of class uint8, uint16 and double 
 
-if ~isa(OImage, 'double')
-    OImage = double(OImage) / double(intmax(class(OImage)));  % Normalize to range [0,1]
-end
 
+OImage  = im2double(OImage); % Normalize to range [0,1]
 
 %% Compute lower and upper gray value boundaries. 
 % Use the parameteers Lower and Upper to find the corresponding gray values for the boundaries
@@ -82,17 +80,24 @@ GImage = ScaledImage .^ Gamma;
 % 
 % 'spillway-dark.tif':
 % These parametere was good for this image:
-% Gamma = 0.4;
+% Gamma = 0.5;
 % Lower = 0.1;
 % Upper = 0.9;
+% a gamma 0.5 gives us a clear picture and the dark parts will not be as grainy
+% a low lower value of 0.1 to get clear contrasts between objects
+% a high uppervalue of 0.9 so that the image does not become completely white.
 %
+
 % 'aerialview-washedout.tif'
 % These parametere was good for this image:
-% Gamma = ;
-% Lower = ;
-% Upper =;
-%
-%
+% Gamma = 3.0;
+% Lower = 0.02;
+% Upper = 0.95;
+% a gamma of 3 gives us pretty clear contrast between the diffrent parts of the picture.
+% a lower value of 0.02 makes it so that the image is not as white and easier to look at the picture 
+% a high upper value of 0.95 makes it so that we can see everything clearly.
+
+
 % The image 'IntensityRampGamma25.tif' illustrates the effect of an intensity
 % ramp displayed on a monitor with gamma =2.5. 
 % Which value for gamma should you use in your code to correct the image to appear as a linear intensity ramp?
@@ -108,6 +113,10 @@ GImage = ScaledImage .^ Gamma;
 % Answer 'yes' or 'no'.
 
 % Your answer:  YES, we got: Minimum and maximum value of GImage: 0 and 1.
+
+
+
+
 
 % If 'no': your code is not functioning correctly and needs to be fixed before submission. 
 % In that case, ask the teachers for clarification before submitting the code.
