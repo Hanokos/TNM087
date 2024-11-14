@@ -87,13 +87,10 @@ title('Image5 (High-pass Filtered Image)');
 imwrite(Image5, fullfile(outputPath, 'Image5.tif'));
 
 %% Problem 8 - mean
-
-meanHighPass = mean2(highPassKernel);  % Mean of the high-pass filter kernel
-meanHighPass_alt = mean(highPassKernel(:));  % Alternative way to compute mean
+meanHighPass_alt = mean(highPassKernel(:));  % Mean of the high-pass filter kernel
 sumHighPass = sum(highPassKernel(:));  % Sum of the high-pass filter kernel
 
 % Display the computed values
-disp(['Mean of high-pass filter (mean2): ', num2str(meanHighPass)]);
 disp(['Mean of high-pass filter (mean function): ', num2str(meanHighPass_alt)]);
 disp(['Sum of high-pass filter: ', num2str(sumHighPass)]);
 
@@ -104,3 +101,5 @@ figure;
 imshow(Image6)
 title('Image6 (Image5 + image)');
 imwrite(Image6, fullfile(outputPath, 'Image6.tif'));
+
+% 2024-11-14 Hans,F
