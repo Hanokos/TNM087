@@ -23,6 +23,7 @@ figure;
 imshow(Image1, []);
 title('Image1 (used filter2)');
 imwrite(Image1, fullfile(outputPath, 'Image1.tif'));
+
 %% Problem 2 - Image2
 % Create a 21x21 box filter kernel. Fö3, slide 27
 kernel2 = ones(21, 21) / (21 * 21);
@@ -35,6 +36,7 @@ figure;
 imshow(Image2, []);
 title('Image2 (used filter2)');
 imwrite(Image2, fullfile(outputPath, 'Image2.tif'));
+
 %% Problem 3 - Image3
 kernelSize = 29; % Size of the kernel (29x29)
 sigma = 4.8; % Standard deviation for the Gaussian filter
