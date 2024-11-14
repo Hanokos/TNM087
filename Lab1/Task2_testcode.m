@@ -2,7 +2,7 @@
 
 %OImage = imread('aerialview-washedout.tif');
 %OImage = imread('spillway-dark.tif');
-OImage = imread('IntensityRampGamma25.tif');
+OImage = imread('F:\LIU\Matlab\TNM087\lab1\Lab1_Images\IntensityRampGamma25.tif');
 
 
 % Apply gamma correction with 
