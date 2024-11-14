@@ -2,7 +2,7 @@ clc
 close all
 clear
 
-%% CHAGNE HERE FOR YOUR OWN FILE FOLDERS!!!
+%% CHANGE HERE FOR YOUR FILE FOLDERS!!!
 path = 'F:\LIU\Matlab\TNM087\Lab2\Lab2_Images'; 
 outputPath = 'F:/LIU/Matlab/TNM087/Lab2/Preparation'; 
 
@@ -39,3 +39,5 @@ figure;
 imshow(GradientMagnitude, []);
 title('Gradient Magnitude (Image9)');
 imwrite(GradientMagnitude, fullfile(outputPath, 'Image9.tif'));
+
+% 2024-11-14 Hans,F
