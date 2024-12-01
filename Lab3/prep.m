@@ -102,3 +102,4 @@ figure;
 imshow(Spec5)
 title('Spec5');
 imwrite(Spec5, "F:\LIU\Matlab\TNM087\Lab3\selfmade_images\Spec5.tif")
+
