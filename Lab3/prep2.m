@@ -29,5 +29,5 @@ ms = abs(Spec7); % Compute magnitude spectrum
 Spec7 = log(1 + ms); % Apply log transformation
 Spec7 = Spec7/max(Spec7(:)); % Normalise image before saving it
 
-figure(9)
+figure;
 imshow(Spec7)
