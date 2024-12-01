@@ -98,26 +98,25 @@ imshow(out)
 %
 % 1. Did you test your code on astronaut-interference.tif and confirm that it successfully
 % removes the sinusoidal noise using D0 = 1? (Answer 'yes' or 'no'. If 'no', test your code with this image and make sure it works!)
-% Your answer: 
+% Your answer: yes
 %
 % 2. The image Einstein_odd_sinus.tif has an odd number of rows and columns. Did you test your code on this image and confirm that
 % it successfully removes the sinusoidal noise using D0 = 1? (Answer 'yes' or 'no'. If 'no', test your code with this image
 % and make sure it works!)
-% Your answer: 
+% Your answer: yes
 %
 % 3. Did you test your code on Einstein_sinus_1.tif and confirm that it successfully
 % removes almost completely the sinusoidal noise with a moderately large D0, and what D0 did you choose? 
 % (Answer 'yes' or 'no'. If 'no', test your code with this image and make sure it works!)
-% Your answer: (yes/no)
-% The D0 that you used is: 
+% Your answer: (yes/no) yes
+% The D0 that you used is: 14
 %
 % 4. Did you test your code on Einstein_sinus_2.tif and confirm that it successfully
 % removes the most dominant sinusoidal noise using D0 = 1?
 % (Answer 'yes' or 'no'. If 'no', test your code with this image and make sure it works!)
-% Your answer: 
+% Your answer: yes
 %
 % Did you try to increase D0 and make sure that larger D0 won't be able to
 % remove the other sinusoidal noise? (Answer 'yes' or 'no'. If 'no', test your code with this image using some larger D0!)
-% Your answer: 
-%
+% Your answer: yes
 %
